@@ -1,4 +1,5 @@
-# Automated EBS Snapshot Backup using AWS Lambda, EventBridge, and SNS
+> 🧠 **Serverless AWS Backup Automation:** Automatically creates EBS snapshots when EC2 instances start — built using EventBridge + Lambda + SNS.
+
 
 ## 🧠 Overview
 This project automatically creates EBS snapshots whenever an EC2 instance starts (state = running).
@@ -64,7 +65,8 @@ EC2 (Backup=true) → EventBridge Rule → Lambda (create snapshot) → SNS Topi
 
 ## ✅ Features
 - Event-driven (no cron jobs)
-- Tag-based filtering (Backup=true)
+- ### 🔖 Tag-Filter Logic  
+The Lambda checks both `Backup=true` and `backup=true` tags, ensuring no instance is skipped due to tag-key case mismatch.
 - Email notification via SNS
 - Serverless (no EC2 maintenance)
 - Logs every action in CloudWatch
