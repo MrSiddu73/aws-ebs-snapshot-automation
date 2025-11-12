@@ -46,6 +46,12 @@ After successful snapshot creation, an email is sent using Amazon SNS.
    - Go to EC2 → Snapshots → confirm snapshot created.
    - Check your email → you’ll get a success notification.
 
+## **ARCHITECTURE DIAGRAM**
+EC2 (Backup=true) → EventBridge Rule → Lambda (create snapshot) → SNS Topic (Email Notification)
+                                         ↓
+                                      EBS Snapshot
+
+
 ## 📊 Log Output
    - Event: {...}
      Instance tags: {'Backup': 'true'}
@@ -79,3 +85,13 @@ After successful snapshot creation, an email is sent using Amazon SNS.
 | 6️⃣  | Create **EventBridge Rule** using `eventbridge_rule.json` | EventBridge console |
 | 7️⃣  | Add tag `Backup=true` to EC2 instance                     | EC2 console         |
 | 8️⃣  | Start EC2 → verify snapshot + email                       | EC2 & email inbox   |
+
+
+## 🧩 Contributions and Implementation
+This project was developed and customized by **Siddu S.N**, who:
+- Modified Lambda logic to handle tag keys (`Backup` or `backup`).
+- Integrated Amazon SNS for real-time email notifications.
+- Implemented least-privilege IAM policy for Lambda.
+- Structured repository with clear folders (`lambda`, `iam`, `eventbridge`).
+- Documented setup and testing process for reproducibility.
+
