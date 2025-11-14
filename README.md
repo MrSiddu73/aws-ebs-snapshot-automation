@@ -167,8 +167,8 @@ aws-ebs-snapshot-automation/
 │── eventbridge/
 │   └── event_pattern.json
 │── docs/
-│   ├── architecture.png
-│   ├── test-result.png
+│   ├── architecture.jpg
+│   ├── test-result.jpg
 │   └── Snapshot-success.pdf
 │── README.md
 │── LICENSE
