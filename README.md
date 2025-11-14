@@ -1,5 +1,12 @@
 # 🧠 AWS EBS Snapshot Automation
 
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazonaws&logoColor=white)
+![Lambda](https://img.shields.io/badge/AWS-Lambda-orange?logo=awslambda&logoColor=white)
+![EventBridge](https://img.shields.io/badge/AWS-EventBridge-purple?logo=amazonaws&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.9-blue?logo=python&logoColor=white)
+![Serverless](https://img.shields.io/badge/Architecture-Serverless-green?logo=serverless&logoColor=white)
+![Status](https://img.shields.io/badge/Automation-EBS%20Snapshots-success)
+
 *Serverless backup system using AWS Lambda, EventBridge, and SNS.*
 
 This project automatically creates EBS snapshots whenever an EC2 instance transitions to the **running** state.
