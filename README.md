@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="docs/banner.png" alt="AWS EBS Snapshot Automation Banner" width="600">
+</p>
+
+<p align="center">
+  <a href="https://github.com/MrSiddu73">
+    <img src="https://img.shields.io/badge/GitHub-MrSiddu73-black?logo=github&style=for-the-badge" alt="GitHub Profile Badge">
+  </a>
+</p>
+
 # 🧠 AWS EBS Snapshot Automation
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazonaws&logoColor=white)
