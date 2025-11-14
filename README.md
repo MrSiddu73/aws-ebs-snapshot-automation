@@ -198,11 +198,11 @@ aws-ebs-snapshot-automation/
 | Step | Action                                                    | Where               |
 | ---- | --------------------------------------------------------- | ------------------- |
 | 1️⃣  | Create **SNS Topic** and confirm email                    | SNS console         |
-| 2️⃣  | Create **IAM Role** with `iam_policy.json`                | IAM console         |
-| 3️⃣  | Create **Lambda Function** with `lambda_function.py`      | Lambda console      |
+| 2️⃣  | Create **IAM Role** with `lambda_policy.json`             | IAM console         |
+| 3️⃣  | Create **Lambda Function** with `snapshot_creator.py`     | Lambda console      |
 | 4️⃣  | Add environment variable `SNS_TOPIC_ARN`                  | Lambda config       |
 | 5️⃣  | Attach IAM Role to Lambda                                 | Lambda permissions  |
-| 6️⃣  | Create **EventBridge Rule** using `eventbridge_rule.json` | EventBridge console |
+| 6️⃣  | Create **EventBridge Rule** using `event_pattern.json`    | EventBridge console |
 | 7️⃣  | Add tag `Backup=true` to EC2 instance                     | EC2 console         |
 | 8️⃣  | Start EC2 → verify snapshot + email                       | EC2 & email inbox   |
 
